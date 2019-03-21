@@ -1082,7 +1082,7 @@ Cron expression used to schedule the job that will process periodically data inj
 
 
 Those parameters can be set in exo.properties or setenv-customize.share
-
+These parameters can be disabled simply by an empty string (as value) in exo.properties or setenv-customize.share
 
 
 .. |image0| image:: images/LDAP/ldap_integration.png   
