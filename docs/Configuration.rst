@@ -6070,11 +6070,11 @@ The addon is configured by default to communicate with Ethereum's public network
           exo.wallet.ContractTransactionVerifierJob.expression=0 0 * ? * * *
 
    -  Checks all pending transactions sent using the eXo Wallet application to update its internal state (cache and persistent storage) and send notifications to receiver and sender of the transactions.
-      The check is made periodically and can be configured using the following property (Default value: every 10 seconds):
+      The check is made periodically and can be configured using the following property (Default value: each day at 7:15 AM):
 
     .. code-block:: jproperties
 
-          exo.wallet.PendingTransactionVerifierJob.expression=0/10 * * * * ?
+          exo.wallet.PendingTransactionVerifierJob.expression=0 15 7 * * ?
 
    -  Send transactions from the so-called *Admin wallet* which is a dedicated blockchain account with special privileges than is used to administrate (initialize and reward)  all user wallets.
 
